@@ -1,0 +1,20 @@
+﻿@page
+@model PercipoBookChapter11.Pages.Product.CreateModel
+
+<h2>Create Product</h2>
+
+<form method="post">
+    <div>
+        <label asp-for="Product.Name"></label>
+        <input asp-for="Product.Name" />
+        <span asp-validation-for="Product.Name"></span>
+    </div>
+
+    <div>
+        <label asp-for="Product.Price"></label>
+        <input asp-for="Product.Price" />
+        <span asp-validation-for="Product.Price"></span>
+    </div>
+
+    <button type="submit">Save</button>
+</form>
