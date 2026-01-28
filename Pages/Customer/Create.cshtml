@@ -1,0 +1,20 @@
+﻿@page
+@model PercipoBookChapter11.Pages.Customer.CreateModel
+
+<h2>Create Product</h2>
+
+<form method="post">
+    <div>
+        <label asp-for="Customer.Name"></label>
+        <input asp-for="Customer.Name" />
+        <span asp-validation-for="Customer.Name"></span>
+    </div>
+
+    <div>
+        <label asp-for="Customer.Email"></label>
+        <input asp-for="Customer.Email" />
+        <span asp-validation-for="Customer.Email"></span>
+    </div>
+
+    <button type="submit">Save</button>
+</form>
